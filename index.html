@@ -5,32 +5,34 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>N'B'O PRABUMULIH</title>
   <style>
-    body {margin:0;font-family:Arial;background:#fff0f5;}
+body {margin:0;font-family:Arial;background:#fff0f5;}
 
-    header{background:#ff4da6;color:#fff;padding:10px;text-align:center;font-weight:bold;}
+header{background:#ff4da6;color:#fff;padding:10px;text-align:center;font-weight:bold;}
 
-    .navbar{display:flex;align-items:center;justify-content:space-between;padding:10px 20px;background:#fff;}
+.navbar{display:flex;align-items:center;justify-content:space-between;padding:10px 20px;background:#fff;}
 
-    .logo{display:flex;align-items:center;gap:10px;}
+.logo{display:flex;align-items:center;gap:10px;}
 
-    .logo img{width:50px;height:50px;border-radius:50%;object-fit:cover;}
+.logo img{width:50px;height:50px;border-radius:50%;object-fit:cover;}
 
-    .brand-center{display:flex;flex-direction:column;align-items:center;justify-content:center;padding:20px;background:#ffe4ec;}
+.brand-center{display:flex;flex-direction:column;align-items:center;justify-content:center;padding:20px;background:#ffe4ec;}
 
-    .brand-center img{width:150px;height:150px;border-radius:50%;object-fit:cover;border:5px solid #ff4da6;box-shadow:0 4px 10px rgba(0,0,0,0.2);} 
+.brand-center img{width:150px;height:150px;border-radius:50%;object-fit:cover;border:5px solid #ff4da6;box-shadow:0 4px 10px rgba(0,0,0,0.2);} 
 
-    .brand-center h1{margin-top:10px;color:#ff1493;font-size:28px;}
+.brand-center h1{margin-top:10px;color:#ff1493;font-size:28px;}
 
-    .menu a{margin:0 10px;text-decoration:none;color:#ff4da6;font-weight:bold;}
+.menu a{margin:0 10px;text-decoration:none;color:#ff4da6;font-weight:bold;}
 
-    .hero-text{
+.hero-text{
   max-width:500px;
   text-align:center;
+  margin:auto;
+  padding:10px;
 }
 
-.hero-text h1{
+.hero-text h2{
   color:#ff1493;
-  font-size:30px;
+  font-size:24px;
 }
 
 .btn-group{
@@ -48,7 +50,6 @@
   text-decoration:none;
   color:#fff;
   font-weight:bold;
-  display:inline-block;
 }
 
 .wa-btn{background:#25D366;}
@@ -58,24 +59,43 @@
   transform:scale(1.05);
   transition:0.3s;
 }
-    .wa-btn{background:#25D366;}
-    .fb-btn{background:#1877F2;}
 
-    .kategori{display:grid;grid-template-columns:repeat(auto-fit,minmax(150px,1fr));gap:15px;padding:20px;}
+/* 🔥 SCROLL SAMPING */
+.kategori{
+  display:flex;
+  overflow-x:auto;
+  gap:15px;
+  padding:20px;
+  scroll-snap-type:x mandatory;
+  scroll-behavior:smooth;
+}
 
-    .card{background:#fff;padding:15px;border-radius:10px;text-align:center;box-shadow:0 2px 5px rgba(0,0,0,0.1);}    
+.kategori::-webkit-scrollbar{
+  display:none;
+}
 
-    .about{padding:20px;background:#fff;margin:20px;border-radius:10px;}
+.card{
+  background:#fff;
+  padding:15px;
+  border-radius:10px;
+  text-align:center;
+  box-shadow:0 2px 5px rgba(0,0,0,0.1);
+  min-width:180px;
+  flex:0 0 auto;
+  scroll-snap-align:start;
+}
 
-    .section{padding:20px;text-align:center;}
+.about{padding:20px;background:#fff;margin:20px;border-radius:10px;}
 
-    .maps{padding:20px;}
+.section{padding:10px;text-align:center;}
 
-    .footer{background:#ff4da6;color:#fff;text-align:center;padding:15px;}
+.maps{padding:20px;}
 
-    .wa{position:fixed;bottom:20px;right:20px;background:#25D366;color:#fff;padding:15px;border-radius:50%;text-decoration:none;}
-    .fb{position:fixed;bottom:80px;right:20px;background:#1877F2;color:#fff;padding:15px;border-radius:50%;text-decoration:none;}
-  </style>
+.footer{background:#ff4da6;color:#fff;text-align:center;padding:15px;}
+
+.wa{position:fixed;bottom:20px;right:20px;background:#25D366;color:#fff;padding:15px;border-radius:50%;text-decoration:none;}
+.fb{position:fixed;bottom:80px;right:20px;background:#1877F2;color:#fff;padding:15px;border-radius:50%;text-decoration:none;}
+</style>
 </head>
 <body>
 

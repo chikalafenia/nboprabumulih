@@ -23,14 +23,41 @@
 
     .menu a{margin:0 10px;text-decoration:none;color:#ff4da6;font-weight:bold;}
 
-    .hero{display:flex;flex-wrap:wrap;align-items:center;justify-content:space-between;padding:30px;background:#ffe4ec;}
+    .hero-text{
+  max-width:500px;
+  text-align:center;
+}
 
-    .hero-text{max-width:500px;}
+.hero-text h1{
+  color:#ff1493;
+  font-size:30px;
+}
 
-    .hero-text h1{color:#ff1493;font-size:30px;}
+.btn-group{
+  display:flex;
+  justify-content:center;
+  gap:15px;
+  margin-top:20px;
+  flex-wrap:wrap;
+}
 
-    .btn{padding:10px 15px;border:none;border-radius:20px;text-decoration:none;color:#fff;margin-right:10px;display:inline-block;}
+.btn{
+  padding:12px 20px;
+  border:none;
+  border-radius:25px;
+  text-decoration:none;
+  color:#fff;
+  font-weight:bold;
+  display:inline-block;
+}
 
+.wa-btn{background:#25D366;}
+.fb-btn{background:#1877F2;}
+
+.btn:hover{
+  transform:scale(1.05);
+  transition:0.3s;
+}
     .wa-btn{background:#25D366;}
     .fb-btn{background:#1877F2;}
 
@@ -71,10 +98,11 @@
   <h1>N'B'O PRABUMULIH</h1>
 </div>
 
-<div class="hero">
-  <div class="hero-text">
-    <h1>N'B'O PRABUMULIH</h1>
-    <p>Butik Online Wanita Modern & Muslimah</p>
+<div class="hero-text">
+  <h1>Tampil Cantik, Elegan & Percaya Diri Setiap Hari ✨</h1>
+  <p>Dapatkan koleksi fashion wanita modern & muslimah dengan kualitas terbaik, model terbaru, dan harga terjangkau hanya di N'B'O PRABUMULIH 💖</p>
+
+  <div class="btn-group">
     <a href="https://wa.me/6285377682299" class="btn wa-btn">Chat WhatsApp</a>
     <a href="https://facebook.com/nirta.birhap.9" class="btn fb-btn">Kunjungi Facebook</a>
   </div>
